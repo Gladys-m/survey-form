@@ -9,9 +9,22 @@
     <h1 id="title">Survey Form</h1>
     <p id="description">Please fill the form below</p>
     <form id="survey-form">
-      <label for="name" id="name-label"> Name <input id="name" type="text" placeholder="Enter your name"/></label>
+      <fieldset>
+        <label for="name" id="name-label"> Name <input id="name" type="text" placeholder="Enter your name"/></label>
       <label for="email" id="email-label"> Email <input id="email" type="email" placeholder="Enter your email"/></label>
-      <label for="number" id="number-label"> Number <input id="number" type="number" min="0" max="100" placeholder="Enter a number"/></label>
+      <label for="number" id="number-label"> Age <input id="number" type="number" min="0" max="100" placeholder="Enter your age"/></label>
+      </fieldset>
+      <fieldset>
+        <label for="job-description"> How can you describe your current role 
+          <select>
+            <option value="">Select current role</option>
+            <option value="1">Unemployed</option>
+            <option value="2">Employed</option>
+            <option value="3">Self-employed</option>
+            <option value="4">Freelance</option>
+          </select>
+        </label>
+      </fieldset>
     </form>
   </body>
 </html>
